@@ -473,6 +473,7 @@ func SelfCertificate(clientHello *tls.ClientHelloInfo) (*tls.Certificate, error)
         SerialNumber: serialNumber,
         Subject: pkix.Name{
             Organization: []string{"DP5 Proxy"},
+            CommonName: "xmpp.szechuen.com",
         },
         NotBefore: notBefore,
         NotAfter:  notAfter,
@@ -534,6 +535,7 @@ func SelfCertificateInit() (*tls.Certificate, error) {
         SerialNumber: serialNumber,
         Subject: pkix.Name{
             Organization: []string{"DP5 Proxy"},
+            CommonName: "xmpp.szechuen.com",
         },
         NotBefore: notBefore,
         NotAfter:  notAfter,
